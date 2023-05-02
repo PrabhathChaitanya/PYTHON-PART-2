@@ -1,0 +1,21 @@
+d={}
+n=int(input("enter the no of students:"))
+for i in range(0,n):
+    c=[]
+    no=int(input("enter player no:"))
+    name=input("enter the name")
+    c.append(name)
+    g=input("enter the your group:")
+    c.append(g)
+    r=input("enter college branch:")
+    c.append(r)
+    w=int(input("enter your phno:"))
+    c.append(w)
+    
+    d[no]=c
+p=int(input("enter the student rno you want details:"))
+print("ROLL NO IS:",no)
+print("NAME IS:",d[p][0])
+print("GOURP IS:",d[p][1])
+print("BRANCH IS:",d[p][2])
+print("PHNO IS:",d[p][3])
