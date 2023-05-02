@@ -1,0 +1,8 @@
+d={}
+n=int(input())
+for i in range(0,n):
+    pno=int(input("enter the player  number"))
+    pname=input("entrer the player name")
+    d[pno]=pname
+r=int(input("enter the player no you want"))
+print(d[r])
