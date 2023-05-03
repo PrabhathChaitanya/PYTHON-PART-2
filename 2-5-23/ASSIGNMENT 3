@@ -1,0 +1,17 @@
+l=list(map(int,input().split()))
+d={}
+for i in l:
+    if i not in d:
+        d[i]=1
+    else:
+        d[i]=d[i]+1
+r=list(d.values())
+m1=min(r)
+m2=max(r)
+print(m1,m2)
+for i in d:
+    if(d[i]==m1):
+       min=i
+    elif d[i]==m2:
+        max=i
+print(min,max)
