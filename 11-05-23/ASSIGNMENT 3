@@ -1,0 +1,19 @@
+import math
+a=10000000
+l=[1]*a
+l[0]=l[1]=0
+for i in range(2,int(math.sqrt(a))+1):
+    if l[i]==1:
+        for j in range(i*i,a,i):
+            l[j]=0
+p=[0]*(len(l))
+for  i in range(2,len(l)):
+    if l[i]==1:
+        p[i]=p[i-1]+1
+    else:
+        p[i]=p[i-1]
+    
+t=int(input())
+for i in range(t):
+    b=int(input())
+    print(p[b])
