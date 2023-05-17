@@ -1,0 +1,10 @@
+#User function Template for python3
+class Solution:
+    def maximumSumSubarray (self,K,Arr,N):
+        w=sum(Arr[:K])
+        b=w
+        for i in range(N-K):
+            w=w-Arr[i]+Arr[i+K]
+            b=max(w,b)
+        return b
+    
