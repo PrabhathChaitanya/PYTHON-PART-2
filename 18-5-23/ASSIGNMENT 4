@@ -1,0 +1,11 @@
+n=int(input())
+l=list(map(int,input().split()))
+b=l[0]
+c=0
+for i in range(n):
+    c=c+l[i]
+    if c>b:
+        b=c
+    if c<0:
+        c=0
+print(b)
