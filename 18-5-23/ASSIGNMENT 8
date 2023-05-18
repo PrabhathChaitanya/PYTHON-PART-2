@@ -8,4 +8,5 @@ for i in range(n):
         s=s*l[j]
         if s<=k:
             c=c+1
+            break
 print(c)
