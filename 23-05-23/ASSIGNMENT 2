@@ -1,1 +1,15 @@
+from itertools import permutations
+class Solution:
+    def find_permutation(self, S):
+        p=permutations(S)
+        m=[]
+        p=sorted(list(p))
+        for i in list(p):
+            x=list(i)
+            s=''
+            for j in x:
+                s=s+j
+            if s not in m:
+                m.append(s)
+        return m
 
