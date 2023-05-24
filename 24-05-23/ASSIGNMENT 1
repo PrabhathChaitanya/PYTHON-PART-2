@@ -1,0 +1,14 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+from itertools import permutations
+a,b=input().split()
+p=permutations(a,int(b))
+p=sorted(p)
+r=[]
+for i in (list(p)):
+    l=list(i)
+    s=''
+    for j in (l):
+        s=s+j 
+    r.append(s)
+for i in (r):
+    print(i)
